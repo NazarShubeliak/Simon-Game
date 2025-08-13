@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&family=Pixelify+Sans:wght@400..700&display=swap');
+:root {
+  --white: #ddefe9;
+  --green: #468b78;
+  --lightGreen: #518c65;
+  --darkGreen: #31543d;
+}
+
+body {
+  background: #1d2a2b;
+  color: #ddefe9;
+  font-family: "Pixelify Sans", sans-serif;
+  font-style: normal;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game_info {
+  font-size: 3rem;
+}
+
+.button_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 80px;
+  margin: 50px 0;
+}
+
+.game_button {
+  height: 200px;
+  width: 200px;
+  box-shadow: -15px 0 0 0 var(--lightGreen), 15px 0 0 0 var(--lightGreen), 0 -15px 0 0 var(--lightGreen), 0 15px 0 0 var(--lightGreen);
+  cursor: pointer;
+}
+
+.game_button:active {
+  transform: translateY(5px);
+  /* box-shadow: -15px 0 0 0 var(--darkGreen), 15px 0 0 0 var(--darkGreen), 0 -15px 0 0 var(--darkGreen), 0 15px 0 0 var(--darkGreen); */
+  filter: brightness(60%);
+}
+
+.button_start {
+  color: #ddefe9;
+  padding: 15px 40px 15px 40px;
+  margin: 10px;
+  font-size: 24px;
+  border: 0;
+  box-shadow: 0px 5px var(--white), 0px -5px var(--white), 5px 0px var(--white), -5px 0px var(--white), 0px 10px var(--green), 5px 5px var(--green), -5px 5px var(--green), inset 0px 5px var(--green) ;
+  cursor: pointer;
+}
+.button_start:active {
+  transform: translateY(5px);
+  box-shadow: 0px 5px var(--green), 0px -5px var(--green), 5px 0px var(--green), -5px 0px var(--green),inset 0px 5px #24473e;
+  color: var(--green);
+}
